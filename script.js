@@ -10,5 +10,5 @@ tns({
     autoplay: true,
     mode: "carousel",
     speed: 300,
-    gutter: 10
+    gutter: 10,
 });
