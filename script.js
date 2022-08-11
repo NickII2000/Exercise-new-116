@@ -1,10 +1,11 @@
 'use strict';
+
 // yourScript.js
 import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
 tns({
     container: '.my-slider',
-    items: 2,
+    items: 3,
     slideBy: 'page',
     autoplay: true,
     mode: "carousel",
