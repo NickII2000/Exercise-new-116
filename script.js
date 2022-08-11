@@ -6,5 +6,7 @@ tns({
     container: '.my-slider',
     items: 2,
     slideBy: 'page',
-    autoplay: true
+    autoplay: true,
+    mode: "carousel",
+    speed: 300
 });
