@@ -13,6 +13,7 @@ tns({
 });
 //==============================================
 
+/*
 
 const arr = [
     {
@@ -102,6 +103,7 @@ two().then(console.log);
 three().then(console.log);
 
 
+
 'use strict';
 
 function getSum(a, b) {
@@ -114,3 +116,104 @@ function getSum(a, b) {
 }
 
 getSum(4, 5);
+
+
+
+const price = 500;
+const money = 400;
+
+switch (true) {
+    case price > money:
+        console.log('Мне не хватает денег');
+    case price < money:
+        console.log('Мне хватает денег!');
+}
+
+
+
+let a = [1, 2, 3], b = [1, 2, 3];
+
+console.log(a == b);
+
+
+
+if (0) {
+    console.log('first')
+} else if (NaN) {
+    console.log('second');
+} else if (' ') {
+    console.log('third');
+} else if (null) {
+    console.log('fourth');
+}
+
+
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('foo');
+    }, 1000);
+    setTimeout(() => {
+        reject('bar');
+    }, 900);
+});
+
+promise.then((value) => {
+    console.log(value);
+}).catch((e) => console.log(e));
+
+
+
+function foo(a, b) {
+    const [first, second] = a;
+    const { eng, ru } = b;
+
+    return `${second}, ${ru}`;
+}
+
+const result = foo(['Hello', 'Привет'], { ru: 'Мир', eng: 'World' });
+console.log(result);
+
+
+
+function setOptions(height, width, ...additional) {
+    console.log(height, width, ...additional)
+}
+setOptions(400, 500, 'red', 'top');
+
+
+
+async function makeRequest() {
+    return await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(json => console.log(json));
+}
+
+makeRequest();
+
+
+
+combineUrls('https', 'mysite.com');
+
+const combineUrls = (protocol, domain) => {
+    return `${protocol}://${domain}`;
+};
+
+
+
+
+console.log(0 || 1);
+console.log(0 && 1);
+console.log(0 || NaN || false || null);
+
+
+
+const msg = 'Заявка №231';
+
+const div = document.createElement('div');
+div.style.background = 'red';
+div.setAttribute('data-msg', true);
+div.textContent = msg;
+
+document.body.append(div);
+
+*/
