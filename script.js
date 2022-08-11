@@ -1,1 +1,4 @@
-console.log(123);
+'use strict';
+// yourScript.js
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
+
