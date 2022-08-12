@@ -59,9 +59,13 @@ console.log(x);
 let c = 4;
 function addX(x) {
     return function (n) {
-        return n + x
+        console.log(x);
+        console.log(n);
+        return n + x;
     }
 }
+
+console.log(addX(3)(4));
 
 const addThree = addX(3);
 
