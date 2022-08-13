@@ -9,7 +9,7 @@ tns({
     slideBy: 'page',
     autoplay: true,
     mode: "carousel",
-    speed: 300,
+    // speed: 300,
 });
 //==============================================
 
