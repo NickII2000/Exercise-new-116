@@ -8,7 +8,7 @@ tns({
     items: 3,
     // slideBy: 'page',
     autoplay: true,
-    mode: "carousel",
+    // mode: "carousel",
     // speed: 300,
 });
 //==============================================
